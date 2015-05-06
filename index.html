@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<!-- Les deux métadonnées les plus importantes. -->
+		<meta charset="UTF-8">
+		<title>Apprends-moi les métadonnées</title>
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="style/base.css">
+		<link rel="icon" href="images/favicon.png">
+		
+		<!-- LES SCHEMAS. Chargement des schémas qui vont être utilisés pour entrer les métadonnées du site. -->
+		<link rel="schema.dc" href="http://purl.org/dc/elements/1.1/">
+		<link rel="schema.og" href="http://ogp.me/ns#">
+		
+		<!-- Le schéma Open Graph -->
+		<meta property="og:description" content="Ce site a été mis en place dans le cadre du cours de Structuration et gestion
+		des métadonnées, de M. Antoine Moreau. Il présente une introduction à ce que sont les métadonnées, un exemple de métadonnée
+		via le site XnView et deux dossiers .pdf plus complets sur le sujet.">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="fr_FR">
+		<meta property="og:site_name" content="Apprends-moi les métadonnées">
+		
+		<!-- Le Schéma Dublin Core -->
+		<meta name="dc.title" content="Apprends-moi les métadonnées">
+		<meta name="dc.description" content="Ce site a été mis en place dans le cadre du cours de Structuration et gestion
+		des métadonnées, de M. Antoine Moreau. Il présente une introduction à ce que sont les métadonnées, un exemple de métadonnée
+		via le site XnView et deux dossiers .pdf plus complets sur le sujet.">
+		<meta name="dc.creator"	content="Ballangé Lou">
+		<meta name="dc.publisher" content="Ballangé Lou">
+		<meta name="dc.subject" content="Métadonnées">
+		<meta name="dc.language" content="Français">
+		<meta name="dc.date" content="2015-11-26">	
+		<meta name="dc.rights" content="La mise en page, les impressions d'écran et les textes sont la propriété de Lou Ballangé dès lors 
+		qu'aucune source extérieure n'est précisée. Ces données peuvent être utilisées à n'importe quelle fin à condition de citer l'auteur.">
+	</head>
+	
+	<body id="hdp">
+		
+		<main>
+			<header>
+				<nav>
+					<a class="logo" href="index.html" title="Retour à l'index" ><img src="images/logo.png"></a>
+					<a class="active" href="#intro" title="Introduction aux métadonnées">Introduction</a>
+					<a class="active" href="#images" title="Les images">Les images</a>
+					<a class="active" href="#pdf" title="Les PDF">Les PDF</a>
+				</nav>
+				
+			</header>
+		
+			<!-- Pour pas que ça soit le gros bordel -->
+		<section>
+			<article id="intro" class="sectiontexte">
+				<h1>Introduction aux métadonnées</h1>
+				
+				<p>De nos jours, et nous ne nous en rendons que très peu compte étant donné que nous sommes habitués désormais, 
+				toute activité, ou presque, tourne autour d'un élément numérique. Même le geste le plus anodin comme prendre des 
+				photographies pendant des vacances est guidé par l'utilisation d'un appareil numérique (appareil photographique ou téléphone portable). 
+				Les métadonnées sont donc un élément important à connaître, à prendre en compte et à utiliser. Mais qu'est-ce donc ?</p>
+				
+				<p>Les métadonnées sont ce que Olivier Ertzscheid, maître de conférences en Sciences de l'information, appelle
+				<i>« les données sur les données ».</i> Il s'agit d'informations relatives à n'importe quel document numérique 
+				qui va être comme une carte d'identité pour ledit document. Le nom de l'auteur, la date de création, le lieu de la prise 
+				de vue pour une photographie, une description, toutes ces informations non visibles par l'utilisateur sont pourtant 
+				bien enregistrées.</p>
+				
+				<h2>Mais alors, à quoi servent les métadonnées ?</h2>
+				
+				<p>Les métadonnées modifiables ne sont pas obligatoires à utiliser. L'utilisateur peut très bien ne pas remplir 
+				ce genre d'informations, sur une photographie ou même un site Internet, et sa création pourra tout de même 
+				être mise en ligne, vue et partagée.</p>
+				
+				<p>Cependant, en le faisant, l'utilisateur s'assure d'être visible. En effet, sur Internet, un nombre toujours 
+				plus important de contenus naissent chaque jours. Il est donc important de savoir quelles sont les astuces 
+				pour obtenir le plus de visibilité et de crédibilité possible. Les métadonnées sont une aide pour cela. En 
+				signant une photographie ou un article grâce aux métadonnées, cette information sera prise en compte par les 
+				moteurs de recherche et le nom de l'auteur ressortira plus facilement. Il en va de même pour les balises lors de 
+				la création d'un site Internet : plus elles seront complètes et soignées, plus le référencement du site sera otpimisé.</p>				
+			</article>
+			
+			<article id="images" class="sectionimage">
+			<h1>XnView et les métadonnées</h1>
+				
+				<p>En exemple à l'introduction écrite au-dessus, je vais ici aborder les métadonnées des photographies et des images 
+				grâce au logiciel XnView.</p>
+				
+				<p>XnView est un logiciel entièrement gratuit et accessible à tous. Il suffit d'aller le télécharger 
+				sur le <a href="http://www.xnview.com/fr/" title="Site de XnView">site Internet</a> et de l'installer 
+				sur votre ordinateur. Une fois ouvert, il est possible d'y importer des images assez facilement. Lorsque 
+				le logiciel est lancé, l'utilisateur a accès à divers onglets. Nous allons nous intéresser aux 
+				métadonnées que l'on appelle EXIF et IPTC. Pour une utilisation plus approfondie de XnView, je vous invite à lire ce 
+				<a href="http://clubinforocatin.free.fr/Tutoriels/Xnview/xnview-tutoriel.pdf" title="Tutoriel XnView">tutoriel</a> en libre accès.</p>
+				
+				<h2>Les métadonnées EXIF</h2>
+				
+				<p>Les métadonnées EXIF sont des métadonnées non modifiables, ou difficilement. Elles portent sur les aspects 
+				purement techniques d'une photographie. Elles sont disponibles dans l'onglet « EXIF » du logiciel. Elles concernent 
+				autant la taille de la photographie que l'utilisation du flash, jusqu'à la géolocalisation et l'appareil photographique 
+				utilisé.</p>
+				
+				<img src="images/exif.jpg" class="exif">
+				
+				<h2>Les métadonnées IPTC</h2>
+				
+				<p>Les métadonnées IPTC, elles, sont modifiables à volonté. Grâce à un clic droit sur l'image, il est possible d'accéder à la 
+				fenêtre « Éditer les informations IPTC ». Dans cette fenêtre, il est donc possible d'entrer toutes les informations souhaitées.</p>
+				
+				<img src="images/fenetreiptc.jpg" class="fenetre">
+				
+				<p>Une fois les modifications apportées, un nouvel onglet apparait afin que l'utilisateur puisse voir les 
+				informations IPTC, les compléter ou les modifier de nouveau au besoin.</p>
+				
+				<img src="images/iptc.jpg" class="iptc">
+			</article>
+			
+			<article id="pdf" class="sectionpdf">
+			<h1>Les dossiers .pdf</h1>
+				
+				<p>Les informations présentes sur ce site ne sont qu'une brève introduction. Pour un 
+				complément d'informations, je vous invite à consulter mes deux dossiers sur les métadonnées 
+				ainsi qu'à prendre votre envol sur Internet à la recherche d'articles de spécialistes.</p>
+				
+				<h2><a href="ressources/MetadonneesFeuille01.pdf" alt="Les métadonnées, ces drôles de petites bêtes">Les métadonnées, ces drôles de petites bêtes</a></h2>
+				
+				<h2><a href="ressources/MetadonneesFeuille02.pdf" alt="Les métadonnées en ligne, une sacrée aventure">Les métadonnées en ligne, une sacrée aventure</a></h2>
+			</article>
+		</section>
+		
+		<aside>
+			<h3>Informations et liens</h3>
+			<p>Site développé par Lou BALLANGÉ dans le cadre du cours de Structuration et gestion des métadonnées de Antoine Moreau 
+			à l'UFR STGI de Montébliard. Année 2014 / 2015.</p>
+			
+			<p>Me contacter > <a href="mailto:lou.ballange@gmail.com" title="Contactez-moi">WWW</a><br>
+			
+			<p>Le site de l'<strong>Université de Franche-Comté</strong> > <a href="http://www.univ-fcomte.fr/" title="Université Franche Comté">WWW</a></p>
+			
+			<p><strong>Olivier Ertzscheid</strong>, Enseignant-chercheur et Maître de conférences en Science de l'information 
+			à l'Université de Nantes.<br>
+			Son site Internet > <a href="http://affordance.typepad.com/" title="Site de Olivier Ertzscheid">WWW</a></p>
+			
+			<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licence Creative Commons" 
+			style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />Ce(tte) 
+			œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+			Licence Creative Commons Attribution - Pas d&#39;Utilisation Commerciale - Pas de Modification 4.0 International</a>.</p>
+		</aside>
+				
+			<footer>
+				Les captures d'écran, la mise en page et les rapports présents  ont été réalisés par Lou Ballangé.
+				Avant toute réutilisation, merci de demander la permission. Merci également de respecter mon travail.
+			</footer>
+				
+				
+			
+		</main>
+		
+		<a href="#hdp" class="up"><img src="images/fleche.png"></a>
+		
+	</body>
+
+</html>
